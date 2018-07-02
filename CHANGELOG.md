@@ -4,6 +4,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.7.0] - 2018-04-18
+### Added
+- Feature flag to disable authorization check for FilesRecord.
+  Should only be used if needed, because of client-app behavior.
+
+## [0.6.9] - 2018-03-22
+### Added
+- `ProvenanceAssessmentTaken` records and tests.
+
+## [0.6.8] - 2018-03-16
+### Changed
+- Default values maintained when django present but
+  not configured.
+
+## [0.6.7] - 2018-03-16
+### Fixed
+- Better exception handling for django environments.
+
+## [0.6.6] - 2018-03-09
+### Added
+- Tests for `set_created_date()`.
+
+## [0.6.5] - 2018-03-09
+### Added
+- `Asset` `createdDate` method implementations.
+
+## [0.6.4] - 2018-03-07
+### Changed
+- Returns a foreign `Catalog` object instead of a `json_`
+  one.
+
+## [0.6.3] - 2018-03-06
+### Added
+- Django `setup` calls to get settings configured correctly.
+
+## [0.6.2] - 2018-03-01
+### Changed
+- `filesystem_adapter` always returns a wrapped `AssetContent`
+  from an `AssetContentList`. 
+
 ## [0.6.1] - 2018-03-01
 ### Changed
 - FilesRecord uses internal helper method and AssetLookup
@@ -257,6 +297,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Initial public release.
 
+[0.7.0]: https://github.com/mitsei/dlkit/compare/0.6.9...0.7.0
+[0.6.9]: https://github.com/mitsei/dlkit/compare/0.6.8...0.6.9
+[0.6.8]: https://github.com/mitsei/dlkit/compare/0.6.7...0.6.8
+[0.6.7]: https://github.com/mitsei/dlkit/compare/0.6.6...0.6.7
+[0.6.6]: https://github.com/mitsei/dlkit/compare/0.6.5...0.6.6
+[0.6.5]: https://github.com/mitsei/dlkit/compare/0.6.4...0.6.5
+[0.6.4]: https://github.com/mitsei/dlkit/compare/0.6.3...0.6.4
+[0.6.3]: https://github.com/mitsei/dlkit/compare/0.6.2...0.6.3
+[0.6.2]: https://github.com/mitsei/dlkit/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/mitsei/dlkit/compare/0.6.0...0.6.1
 [0.6.0]: https://github.com/mitsei/dlkit/compare/0.5.18...0.6.0
 [0.5.18]: https://github.com/mitsei/dlkit/compare/0.5.17...0.5.18
